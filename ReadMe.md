@@ -21,5 +21,5 @@ If I had unlimited time, I would use it to test the app more rigorously and chan
 Ans9. For some basic automated testing, one could use tools available in Xcode to implement them as I have done in the app. Using other software like Jenkins and Appium would be another approach.
 #### Q10 If you were unable to finish the exercise, what issues did you face and how did you plan on finishing the exercise?
 Ans10. N/A
-#### Q11 I1.  Prove that the “Movie not found” warning will be displayed if there are no search results?
+#### Q11.  Prove that the “Movie not found” warning will be displayed if there are no search results?
 Ans11. I have proved this using UI testing in Xcode. The code for it is in the repo. I simulate typing nonsense words in the search bar and check if the movie name's label's text has been changed to 'Movie not found' or not.
