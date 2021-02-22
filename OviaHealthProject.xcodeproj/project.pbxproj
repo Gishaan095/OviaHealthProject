@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00229E7925E1D36F00E886C2 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00229E7825E1D36F00E886C2 /* NetworkManagerTests.swift */; };
+		006D1CF325E0202D006B6387 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006D1CF225E0202D006B6387 /* NetworkManager.swift */; };
+		006D1CF925E0219E006B6387 /* OMDBResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006D1CF825E0219E006B6387 /* OMDBResponse.swift */; };
+		006D1D0125E02374006B6387 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006D1D0025E02374006B6387 /* NetworkError.swift */; };
+		00C4667B25DF751F0043472F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4667A25DF751F0043472F /* AppDelegate.swift */; };
+		00C4667D25DF751F0043472F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4667C25DF751F0043472F /* SceneDelegate.swift */; };
+		00C4667F25DF75200043472F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4667E25DF75200043472F /* ViewController.swift */; };
+		00C4668225DF75200043472F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4668025DF75200043472F /* Main.storyboard */; };
+		00C4668425DF75220043472F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C4668325DF75220043472F /* Assets.xcassets */; };
+		00C4668725DF75220043472F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C4668525DF75220043472F /* LaunchScreen.storyboard */; };
+		00C4669D25DF75220043472F /* OviaHealthProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C4669C25DF75220043472F /* OviaHealthProjectUITests.swift */; };
+		92AACD66606F17A6B050BFD9 /* Pods_OviaHealthProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE124B4C3128310173869FF9 /* Pods_OviaHealthProject.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00C4668E25DF75220043472F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C4666F25DF751F0043472F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00C4667625DF751F0043472F;
+			remoteInfo = OviaHealthProject;
+		};
+		00C4669925DF75220043472F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C4666F25DF751F0043472F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00C4667625DF751F0043472F;
+			remoteInfo = OviaHealthProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00229E7825E1D36F00E886C2 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		006D1CF225E0202D006B6387 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		006D1CF825E0219E006B6387 /* OMDBResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBResponse.swift; sourceTree = "<group>"; };
+		006D1D0025E02374006B6387 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		00C4667725DF751F0043472F /* OviaHealthProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OviaHealthProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C4667A25DF751F0043472F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00C4667C25DF751F0043472F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00C4667E25DF75200043472F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00C4668125DF75200043472F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00C4668325DF75220043472F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00C4668625DF75220043472F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00C4668825DF75220043472F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C4668D25DF75220043472F /* OviaHealthProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OviaHealthProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C4669325DF75220043472F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C4669825DF75220043472F /* OviaHealthProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OviaHealthProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00C4669C25DF75220043472F /* OviaHealthProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OviaHealthProjectUITests.swift; sourceTree = "<group>"; };
+		00C4669E25DF75220043472F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D6B991B2D98005BE2F5F787 /* Pods-OviaHealthProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OviaHealthProject.debug.xcconfig"; path = "Target Support Files/Pods-OviaHealthProject/Pods-OviaHealthProject.debug.xcconfig"; sourceTree = "<group>"; };
+		5815E9D9F31EB194E31BA27D /* Pods-OviaHealthProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OviaHealthProject.release.xcconfig"; path = "Target Support Files/Pods-OviaHealthProject/Pods-OviaHealthProject.release.xcconfig"; sourceTree = "<group>"; };
+		FE124B4C3128310173869FF9 /* Pods_OviaHealthProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OviaHealthProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00C4667425DF751F0043472F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92AACD66606F17A6B050BFD9 /* Pods_OviaHealthProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C4668A25DF75220043472F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C4669525DF75220043472F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		006D1CEC25E01FEC006B6387 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				00C4667E25DF75200043472F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		006D1CF025E02005006B6387 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00C4668025DF75200043472F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		006D1CF125E0200D006B6387 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				006D1CF225E0202D006B6387 /* NetworkManager.swift */,
+				006D1D0025E02374006B6387 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		006D1CF725E0215E006B6387 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				006D1CF825E0219E006B6387 /* OMDBResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00C4666E25DF751F0043472F = {
+			isa = PBXGroup;
+			children = (
+				00C4667925DF751F0043472F /* OviaHealthProject */,
+				00C4669025DF75220043472F /* OviaHealthProjectTests */,
+				00C4669B25DF75220043472F /* OviaHealthProjectUITests */,
+				00C4667825DF751F0043472F /* Products */,
+				1EF3771D5D25120B24253A5A /* Pods */,
+				D64C74F6728F3F1BF215E446 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00C4667825DF751F0043472F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00C4667725DF751F0043472F /* OviaHealthProject.app */,
+				00C4668D25DF75220043472F /* OviaHealthProjectTests.xctest */,
+				00C4669825DF75220043472F /* OviaHealthProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00C4667925DF751F0043472F /* OviaHealthProject */ = {
+			isa = PBXGroup;
+			children = (
+				006D1CF725E0215E006B6387 /* Model */,
+				006D1CF125E0200D006B6387 /* Network */,
+				00C4667A25DF751F0043472F /* AppDelegate.swift */,
+				00C4667C25DF751F0043472F /* SceneDelegate.swift */,
+				006D1CEC25E01FEC006B6387 /* Controller */,
+				006D1CF025E02005006B6387 /* View */,
+				00C4668325DF75220043472F /* Assets.xcassets */,
+				00C4668525DF75220043472F /* LaunchScreen.storyboard */,
+				00C4668825DF75220043472F /* Info.plist */,
+			);
+			path = OviaHealthProject;
+			sourceTree = "<group>";
+		};
+		00C4669025DF75220043472F /* OviaHealthProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				00C4669325DF75220043472F /* Info.plist */,
+				00229E7825E1D36F00E886C2 /* NetworkManagerTests.swift */,
+			);
+			path = OviaHealthProjectTests;
+			sourceTree = "<group>";
+		};
+		00C4669B25DF75220043472F /* OviaHealthProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00C4669C25DF75220043472F /* OviaHealthProjectUITests.swift */,
+				00C4669E25DF75220043472F /* Info.plist */,
+			);
+			path = OviaHealthProjectUITests;
+			sourceTree = "<group>";
+		};
+		1EF3771D5D25120B24253A5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D6B991B2D98005BE2F5F787 /* Pods-OviaHealthProject.debug.xcconfig */,
+				5815E9D9F31EB194E31BA27D /* Pods-OviaHealthProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D64C74F6728F3F1BF215E446 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE124B4C3128310173869FF9 /* Pods_OviaHealthProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00C4667625DF751F0043472F /* OviaHealthProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C466A125DF75220043472F /* Build configuration list for PBXNativeTarget "OviaHealthProject" */;
+			buildPhases = (
+				C6B8A5C4CDCD5B90B65E42B0 /* [CP] Check Pods Manifest.lock */,
+				00C4667325DF751F0043472F /* Sources */,
+				00C4667425DF751F0043472F /* Frameworks */,
+				00C4667525DF751F0043472F /* Resources */,
+				AD623C8670D0CD26431A916E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OviaHealthProject;
+			productName = OviaHealthProject;
+			productReference = 00C4667725DF751F0043472F /* OviaHealthProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00C4668C25DF75220043472F /* OviaHealthProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C466A425DF75220043472F /* Build configuration list for PBXNativeTarget "OviaHealthProjectTests" */;
+			buildPhases = (
+				00C4668925DF75220043472F /* Sources */,
+				00C4668A25DF75220043472F /* Frameworks */,
+				00C4668B25DF75220043472F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00C4668F25DF75220043472F /* PBXTargetDependency */,
+			);
+			name = OviaHealthProjectTests;
+			productName = OviaHealthProjectTests;
+			productReference = 00C4668D25DF75220043472F /* OviaHealthProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00C4669725DF75220043472F /* OviaHealthProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C466A725DF75220043472F /* Build configuration list for PBXNativeTarget "OviaHealthProjectUITests" */;
+			buildPhases = (
+				00C4669425DF75220043472F /* Sources */,
+				00C4669525DF75220043472F /* Frameworks */,
+				00C4669625DF75220043472F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00C4669A25DF75220043472F /* PBXTargetDependency */,
+			);
+			name = OviaHealthProjectUITests;
+			productName = OviaHealthProjectUITests;
+			productReference = 00C4669825DF75220043472F /* OviaHealthProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00C4666F25DF751F0043472F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					00C4667625DF751F0043472F = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					00C4668C25DF75220043472F = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 00C4667625DF751F0043472F;
+					};
+					00C4669725DF75220043472F = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 00C4667625DF751F0043472F;
+					};
+				};
+			};
+			buildConfigurationList = 00C4667225DF751F0043472F /* Build configuration list for PBXProject "OviaHealthProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00C4666E25DF751F0043472F;
+			productRefGroup = 00C4667825DF751F0043472F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00C4667625DF751F0043472F /* OviaHealthProject */,
+				00C4668C25DF75220043472F /* OviaHealthProjectTests */,
+				00C4669725DF75220043472F /* OviaHealthProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00C4667525DF751F0043472F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C4668725DF75220043472F /* LaunchScreen.storyboard in Resources */,
+				00C4668425DF75220043472F /* Assets.xcassets in Resources */,
+				00C4668225DF75200043472F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C4668B25DF75220043472F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C4669625DF75220043472F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD623C8670D0CD26431A916E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OviaHealthProject/Pods-OviaHealthProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OviaHealthProject/Pods-OviaHealthProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OviaHealthProject/Pods-OviaHealthProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6B8A5C4CDCD5B90B65E42B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OviaHealthProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00C4667325DF751F0043472F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D1CF925E0219E006B6387 /* OMDBResponse.swift in Sources */,
+				006D1CF325E0202D006B6387 /* NetworkManager.swift in Sources */,
+				00C4667F25DF75200043472F /* ViewController.swift in Sources */,
+				006D1D0125E02374006B6387 /* NetworkError.swift in Sources */,
+				00C4667B25DF751F0043472F /* AppDelegate.swift in Sources */,
+				00C4667D25DF751F0043472F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C4668925DF75220043472F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00229E7925E1D36F00E886C2 /* NetworkManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00C4669425DF75220043472F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C4669D25DF75220043472F /* OviaHealthProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00C4668F25DF75220043472F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00C4667625DF751F0043472F /* OviaHealthProject */;
+			targetProxy = 00C4668E25DF75220043472F /* PBXContainerItemProxy */;
+		};
+		00C4669A25DF75220043472F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00C4667625DF751F0043472F /* OviaHealthProject */;
+			targetProxy = 00C4669925DF75220043472F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00C4668025DF75200043472F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00C4668125DF75200043472F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00C4668525DF75220043472F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00C4668625DF75220043472F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00C4669F25DF75220043472F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00C466A025DF75220043472F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00C466A225DF75220043472F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6B991B2D98005BE2F5F787 /* Pods-OviaHealthProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MR2D6QBB8;
+				INFOPLIST_FILE = OviaHealthProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topspot.OviaHealthProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00C466A325DF75220043472F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5815E9D9F31EB194E31BA27D /* Pods-OviaHealthProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MR2D6QBB8;
+				INFOPLIST_FILE = OviaHealthProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topspot.OviaHealthProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00C466A525DF75220043472F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MR2D6QBB8;
+				INFOPLIST_FILE = OviaHealthProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topspot.OviaHealthProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OviaHealthProject.app/OviaHealthProject";
+			};
+			name = Debug;
+		};
+		00C466A625DF75220043472F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MR2D6QBB8;
+				INFOPLIST_FILE = OviaHealthProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topspot.OviaHealthProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OviaHealthProject.app/OviaHealthProject";
+			};
+			name = Release;
+		};
+		00C466A825DF75220043472F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MR2D6QBB8;
+				INFOPLIST_FILE = OviaHealthProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topspot.OviaHealthProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OviaHealthProject;
+			};
+			name = Debug;
+		};
+		00C466A925DF75220043472F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MR2D6QBB8;
+				INFOPLIST_FILE = OviaHealthProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.topspot.OviaHealthProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OviaHealthProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00C4667225DF751F0043472F /* Build configuration list for PBXProject "OviaHealthProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C4669F25DF75220043472F /* Debug */,
+				00C466A025DF75220043472F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C466A125DF75220043472F /* Build configuration list for PBXNativeTarget "OviaHealthProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C466A225DF75220043472F /* Debug */,
+				00C466A325DF75220043472F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C466A425DF75220043472F /* Build configuration list for PBXNativeTarget "OviaHealthProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C466A525DF75220043472F /* Debug */,
+				00C466A625DF75220043472F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00C466A725DF75220043472F /* Build configuration list for PBXNativeTarget "OviaHealthProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00C466A825DF75220043472F /* Debug */,
+				00C466A925DF75220043472F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00C4666F25DF751F0043472F /* Project object */;
+}

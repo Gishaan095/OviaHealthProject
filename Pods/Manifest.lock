@@ -1,0 +1,20 @@
+PODS:
+  - Cosmos (23.0.0)
+  - JGProgressHUD (2.2)
+
+DEPENDENCIES:
+  - Cosmos
+  - JGProgressHUD
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - Cosmos
+    - JGProgressHUD
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+
+PODFILE CHECKSUM: cdb7657fb83edd57389a06db46e2b53e98fc3dca
+
+COCOAPODS: 1.9.1
